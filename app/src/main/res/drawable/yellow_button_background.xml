@@ -1,0 +1,5 @@
+<!-- yellow_button_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#800000"/> <!-- Use #FFFF00 for yellow color -->
+</shape>

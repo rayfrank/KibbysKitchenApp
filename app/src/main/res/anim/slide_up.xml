@@ -1,0 +1,10 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Translate animation for sliding up -->
+    <translate
+        android:fromYDelta="0"
+        android:toYDelta="-100%"
+        android:duration="1000"
+        android:interpolator="@android:anim/linear_interpolator"
+        android:fillAfter="true" />
+</set>
+
