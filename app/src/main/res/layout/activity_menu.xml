@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- SMALL BITES Category -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMALL BITES"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Clickable Item 1 -->
+            <TextView
+                android:id="@+id/item_meat_samosa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meat Samosa (2 pcs) Ksh 200"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/vegetable_samosa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vegetable samosa (2 pcs) Ksh 200"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/Panner_samosa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Panner samosa (2 pcs) Ksh 200"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/meatPie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meat pie Ksh 180"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/cheesepie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cheese pie Ksh 180"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/Chicken_Pie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chicken Pie Ksh 200"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pastires"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/TeaScones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tea Scones Ksh 100"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/PlainCroissant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plain Croissant Ksh 200"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/ChocolateCroissant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chocolate Croissant Ksh 230"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/AlmondflakesCroissant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Almond flakes Croissant Ksh 250"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/DanishPastry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Danish pastry Ksh 200"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/DanishBlueBerry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Danish blueberry Ksh 230"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/FrenchBauguette"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="French bauguette Ksh 200"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Breads"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/KibbySandwichbread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kibby's Sandwich bread Ksh 200"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/KibbysGarliccheesebread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kibby's Garlic cheese bread Ksh 200"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/KibbyBananabread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kibby's Banana bread Ksh 220"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/KibbySweetbread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kibby's Sweet bread Ksh 220"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/KibbyMultigraincerealbread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kibby's Multi grain cereal bread Ksh 220"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/KibbysBurgerbuns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kibby’s Burger buns (4pcs) Ksh 120"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/KibbysHotdogbuns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kibby’s Hot dog buns (4pcs) Ksh 120"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/KibbysFrenchbaguette"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kibby’s French baguette Ksh 150"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/KibbysGarlicbread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kibby’s Garlic bread Ksh 150"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/KibbysFocassiobread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kibby’s Focassio bread Ksh 150"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/item_selector"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"/>
+            <!-- Add more clickable items in the same pattern -->
+
+            <!-- PASTRIES Category -->
+            <!-- ... Repeat for each category and item ... -->
+
+            <!-- BREADS Category -->
+            <!-- ... Repeat for each category and item ... -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#7A4504"
+        app:itemIconTint="@color/icon_yellow"
+        app:itemTextColor="@color/icon_yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

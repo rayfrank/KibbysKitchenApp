@@ -3,4 +3,6 @@
     <color name="background_maroon">#800020</color>
     <color name="text_yellow">#ffff00</color>
     <color name="icon_yellow">#ffff00</color>
+    <color name="pressed_color">#FFEB3B</color> <!-- Yellow for pressed state -->
+    <color name="default_color">#FFFFFF</color> <!-- White for default state -->
 </resources>

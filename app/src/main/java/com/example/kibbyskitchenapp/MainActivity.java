@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -15,11 +16,26 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        Button ExploreMenu = findViewById(R.id.exploreMenuButton);
+
+        ExploreMenu.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                 OpenMenu();
+            }
+        });
+
+
+
+
 
         // Navigation logic with recommended method
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -29,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent;
                 int id = item.getItemId();
 
-                if (id == R.id.action_home) {
+                if (id == R.id.action_home)
+                {
                     // Intent for the Home Activity
                     intent = new Intent(MainActivity.this, MainActivity.class);
                     startActivity(intent);
@@ -52,6 +69,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+    public void OpenMenu()
+    {
+        Intent intent = new Intent(this, Menu.class);
+        startActivity(intent);
+    }
+
+
+
 }
 
 
