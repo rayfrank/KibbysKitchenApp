@@ -1,8 +1,8 @@
 package com.example.kibbyskitchenapp;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -65,20 +65,24 @@ public class Menu extends AppCompatActivity {
         kibbysFrenchBaguette.setOnClickListener(v -> showPaymentConfirmationDialog("Kibby’s French baguette", 150));
         kibbysGarlicBread.setOnClickListener(v -> showPaymentConfirmationDialog("Kibby’s Garlic bread", 150));
         kibbysFocassioBread.setOnClickListener(v -> showPaymentConfirmationDialog("Kibby’s Focassio bread", 150));
+
+        // Button to view the cart
+        findViewById(R.id.view_cart_button).setOnClickListener(v -> {
+            Intent intent = new Intent(Menu.this, CartActivity.class);
+            startActivity(intent);
+        });
     }
 
     // Method to show the payment confirmation dialog
     private void showPaymentConfirmationDialog(String itemName, int price) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Confirm Payment");
-        builder.setMessage("Are you sure you want to purchase " + itemName + " for Ksh " + price + "?");
+        builder.setTitle("Confirm Order");
+        builder.setMessage("Are you sure you want to order " + itemName + " for KES " + price + "?");
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                // Here you can implement the code to prompt the M-Pesa toolkit for payment
-                // For demonstration purpose, I'll just show a toast
-                // Replace this with the actual M-Pesa toolkit integration
-                showToast("Payment initiated for " + itemName);
+                Cart.getInstance().addItem(new OrderItem(itemName, price));
+                showToast(itemName + " added to cart");
             }
         });
         builder.setNegativeButton("Cancel", null);
