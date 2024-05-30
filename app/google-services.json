@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "577079161001",
+    "project_id": "kibbys-kitchen",
+    "storage_bucket": "kibbys-kitchen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577079161001:android:5edada5c542f3fcbc5b9b8",
+        "android_client_info": {
+          "package_name": "com.example.kibbyskitchenapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4nMclerjOwAphQtmMJPFb8hkwv3JBoA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

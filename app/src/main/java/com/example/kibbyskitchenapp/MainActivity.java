@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
         Button ExploreMenu = findViewById(R.id.exploreMenuButton);
-
+        Button CreateAccount = findViewById(R.id.CreateAccount);
+        Button LoginButton = findViewById(R.id.LogIn);
         ExploreMenu.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -32,7 +33,20 @@ public class MainActivity extends AppCompatActivity {
                  OpenMenu();
             }
         });
-
+        CreateAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                  CreateAccount();
+            }
+        });
+        LoginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                LogInAccount();
+            }
+        });
 
 
 
@@ -74,7 +88,16 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Menu.class);
         startActivity(intent);
     }
-
+    public void CreateAccount()
+    {
+        Intent intent = new Intent(this, RegistrationActivity.class);
+        startActivity(intent);
+    }
+    public void LogInAccount()
+    {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
 
 
 }
