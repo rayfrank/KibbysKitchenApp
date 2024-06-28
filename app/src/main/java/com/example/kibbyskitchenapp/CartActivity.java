@@ -15,8 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class CartActivity extends AppCompatActivity
-{
+public class CartActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     private FirebaseFirestore db;
@@ -58,7 +57,7 @@ public class CartActivity extends AppCompatActivity
             order.put("items", items);
             order.put("status", "Pending");
 
-            db.collection("orders")
+            db.collection("users").document(userId).collection("orders")
                     .add(order)
                     .addOnSuccessListener(documentReference -> {
                         // Clear the cart
