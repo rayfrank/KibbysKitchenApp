@@ -37,7 +37,11 @@ public class LoginActivity extends AppCompatActivity {
                 String email = editTextUsername.getText().toString();
                 String password = editTextPassword.getText().toString();
 
-                loginUser(email, password);
+                if (email.isEmpty() || password.isEmpty()) {
+                    Toast.makeText(LoginActivity.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
+                } else {
+                    loginUser(email, password);
+                }
             }
         });
 
@@ -57,15 +61,14 @@ public class LoginActivity extends AppCompatActivity {
                         // Sign in success, update UI with the signed-in user's information
                         FirebaseUser user = mAuth.getCurrentUser();
                         if (user != null) {
-                            // Check user role here, for example, you could use Firestore to retrieve user roles
-                            // For now, let's assume all authenticated users are regular users
+                            // Assuming all authenticated users are regular users
                             Intent intent = new Intent(LoginActivity.this, Menu.class);
                             startActivity(intent);
                             finish();
                         }
                     } else {
                         // If sign in fails, display a message to the user.
-                        Toast.makeText(LoginActivity.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Authentication failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
     }
