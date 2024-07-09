@@ -27,7 +27,7 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.example.kibbyskitchenapp" />
+                  <option name="appId" value="com.kibbyskitchen.kibbyskitchenapp" />
                   <option name="mobileSdkAppId" value="1:577079161001:android:5edada5c542f3fcbc5b9b8" />
                   <option name="projectId" value="kibbys-kitchen" />
                   <option name="projectNumber" value="577079161001" />

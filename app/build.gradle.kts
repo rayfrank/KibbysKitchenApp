@@ -4,14 +4,14 @@ plugins {
 }
 
 android {
-    namespace = "com.example.kibbyskitchenapp"
+    namespace = "com.kibbyskitchen.kibbyskitchenapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.kibbyskitchenapp"
+        applicationId = "com.kibbyskitchen.kibbyskitchenapp"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
+        versionCode = 2
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

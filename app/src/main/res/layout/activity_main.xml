@@ -14,8 +14,8 @@
 
     <TextView
         android:id="@+id/titleTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="316dp"
+        android:layout_height="42dp"
         android:layout_marginTop="16dp"
         android:text="Welcome to Kibby's Kitchen!"
         android:textColor="#FF8C00"
@@ -28,7 +28,7 @@
         android:id="@+id/descriptionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="28dp"
         android:text="Explore our delicious menu and place your order!"
         android:textColor="#FF8C00"
         android:textSize="16sp"
@@ -39,8 +39,8 @@
 
     <Button
         android:id="@+id/exploreMenuButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="168dp"
+        android:layout_height="60dp"
         android:layout_marginTop="40dp"
         android:src="@drawable/buttonbackground"
         android:text="Explore Menu"
@@ -58,8 +58,8 @@
 
     <Button
         android:id="@+id/CreateAccount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="231dp"
+        android:layout_height="64dp"
         android:layout_marginTop="44dp"
         android:src="@drawable/buttonbackground"
         android:text="Create Kibbys Account"
@@ -71,9 +71,9 @@
 
     <Button
         android:id="@+id/LogIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_width="152dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="24dp"
         android:src="@drawable/buttonbackground"
         android:text="LogIn"
         android:textColor="#FF8C00"
@@ -84,13 +84,13 @@
 
     <Button
         android:id="@+id/viewCartButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_width="149dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="28dp"
         android:text="View Cart"
         android:textColor="#FF8C00"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LogIn" />
 
